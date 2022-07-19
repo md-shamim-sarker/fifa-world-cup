@@ -1,3 +1,13 @@
+/* -----------------------------------------------------
+---------------------- Google Fonts ---------------------
+------------------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* -----------------------------------------------------
+---------------------- Common Style-------------------
+------------------------------------------------------ */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,16 +17,76 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 .container {
     width: 80vw;
     margin: auto;
-    background-color: #b8cccc;
 }
+
+.flexible-container {
+    display: flex;
+    background-color: #161616;
+    border-radius: 30px;
+    color: #ffffff;
+    margin-top: 2em;
+}
+
+/* -----------------------------------------------------
+---------------------- Header Section Style ------------
+------------------------------------------------------ */
+
+.banner-image {
+    width: 50%;
+}
+
+.banner-text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 111px 0 111px 106px;
+}
+
+#banner-heading {
+    font-size: 3.5em;
+    line-height: 1em;
+}
+
+#banner-details {
+    font-size: 0.8em;
+    margin: 2em 0;
+}
+
+#watch-live-btn {
+    background-color: #DD0000;
+    border: 3px solid #DD0000;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+
+.banner-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.banner-image img {
+    width: 85%;
+}
+
+
+
+
+
 
 footer {
     width: 100vw;
     height: 30vh;
-    background-color: black;
+    background-color: #ffff;
 }
