@@ -25,17 +25,17 @@ body {
     margin: auto;
 }
 
-.flexible-container {
+/* -----------------------------------------------------
+---------------------- Header Section Style ------------
+------------------------------------------------------ */
+
+.header-container {
     display: flex;
     background-color: #161616;
     border-radius: 30px;
     color: #ffffff;
     margin-top: 2em;
 }
-
-/* -----------------------------------------------------
----------------------- Header Section Style ------------
------------------------------------------------------- */
 
 .banner-image {
     width: 50%;
@@ -79,6 +79,81 @@ body {
 .banner-image img {
     width: 85%;
 }
+
+/* -----------------------------------------------------
+---------------------- Main Section Style ------------
+------------------------------------------------------ */
+
+.main-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 4em;
+}
+
+.left-nav {
+    width: 25rem;
+    background-color: #161616;
+    border-radius: 10px;
+}
+
+.blog-cards {
+    width: 75rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.blog-card {
+    border: 1px solid #cac6c6;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.blog-thumbnail img {
+    width: 100%;
+}
+
+.thumbnail-details {
+    padding: 1em;
+}
+
+.thumbnail-btn {
+    border: 1px solid gray;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.thumbnail-btn:hover {
+    border: 1px solid #DD0000;
+    background-color: #DD0000;
+    color: #ffffff;
+}
+
+.thumbnail-heading {
+    font-size: 0.9em;
+    padding: 1em 0;
+}
+
+.thumbnail-heading:hover {
+    color: #DD0000;
+}
+
+.time-comment {
+    display: flex;
+    gap: 2em;
+}
+
+.time-comment p:nth-child(1):hover,
+.time-comment p:nth-child(2):hover {
+    color: #DD0000;
+}
+
+
+
+
+
 
 
 
