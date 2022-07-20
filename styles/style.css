@@ -175,6 +175,63 @@ body {
     gap: 2em;
 }
 
+#view-all-btn {
+    text-align: center;
+    margin: 2em 0;
+    display: none;
+}
+
+#view-all-btn button {
+    background-color: #DD0000;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+
+/* -----------------------------------------------------
+---------------------- Match Section Style ------------
+------------------------------------------------------ */
+.match-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em 1em;
+}
+
+.match-card {
+    box-shadow: 5px 5px 30px #e4e1e1;
+    padding: 1em;
+}
+
+.match-thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.match-thumbnail img {
+    width: 38%;
+}
+
+.match-thumbnail-details {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.match-thumbnail-details h2 {
+    font-size: 1em;
+}
+
+.match-thumbnail-details p {
+    font-size: 0.6em;
+    color: #706d6d;
+}
+
 /* -----------------------------------------------------
 ---------------------- Footer Section Style ------------
 ------------------------------------------------------ */
@@ -190,7 +247,7 @@ footer {
 .hr-line {
     width: 80vw;
     margin: 2em auto;
-    border-top: 0.1px solid white;
+    border-top: 0.1px solid #494646;
 }
 
 .footer-link-container {
@@ -227,7 +284,6 @@ footer {
 
     .left-nav {
         width: 100%;
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
         background-color: #ffffff;
@@ -245,6 +301,28 @@ footer {
     .blog-cards {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #view-all-btn {
+        display: block;
+    }
+
+    footer {
+        padding: 2em 2em;
+    }
+
+    .footer-link-container {
+        column-gap: 4em;
+    }
+
+    .match-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em 1em;
+        justify-content: stretch;
     }
 }
 
@@ -278,7 +356,6 @@ footer {
         width: 100%;
         height: 52px;
         font-size: 2.5vw;
-        /* border: 1px solid white; */
     }
 
     .left-nav {
@@ -294,20 +371,27 @@ footer {
 
     .blog-cards {
         width: 100%;
-        /* display: grid; */
         grid-template-columns: repeat(1, 1fr);
-        /* gap: 1.5rem; */
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #view-all-btn {
+        display: none;
     }
 
     #watch-live-btn {
-        /* background-color: #DD0000;
-        border: 3px solid #DD0000;
-        border-radius: 5px;
-        color: #ffffff;
-        padding: 10px 20px; */
         font-size: 3vw;
-        /* letter-spacing: 0.1em;
-        font-weight: 700; */
     }
 
+    .footer-link-container {
+        flex-direction: column;
+    }
+
+    .match-cards {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 2em;
+    }
 }
