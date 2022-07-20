@@ -276,6 +276,11 @@ footer {
     color: white
 }
 
+footer>img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
 .hr-line {
     width: 80vw;
     margin: 2em auto;
@@ -348,6 +353,11 @@ footer {
 
     footer {
         padding: 2em 2em;
+    }
+
+    footer img {
+        width: 20px;
+        height: 20px;
     }
 
     .footer-link-container {
